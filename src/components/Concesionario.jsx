@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { Global } from '../Global'
 import Coches from './Coches';
 
-export default class extends Component {
+export default class Concesionario extends Component {
 
     selectRef = React.createRef();
     counter = 0;
