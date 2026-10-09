@@ -15,7 +15,7 @@ function ComponentServiceCustomers() {
 
     useEffect(() => {
         loadCustomers();
-    });
+    }, []);
     
     return(
         <div>

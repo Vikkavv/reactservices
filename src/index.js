@@ -8,6 +8,9 @@ import ComponentServiceSuppliers from './components/ComponentServiceSuppliers';
 import EmpleadosDepartamentos from './components/EmpleadosDepartamentos';
 import EmpeladosOficios from './components/EmpleadosOficios';
 import Menu from './components/Menu';
+import EmpleadosComponent from './components/EmpleadosComponent';
+import DepartamentosComponent from './components/DepartamentosComponent';
+import Concesionario from './components/Concesionario';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +22,8 @@ root.render(
         <Route path='/Suppliers' element={<ComponentServiceSuppliers/>} />
         <Route path='/Empleados' element={<EmpleadosDepartamentos/>} />
         <Route path='/EmpleadosOficios' element={<EmpeladosOficios/>} />
+        <Route path='/EmpleadosDepartamentos' element={<DepartamentosComponent/>} />
+        <Route path='/Concesionario' element={<Concesionario/>} />
       </Routes>
     </BrowserRouter>
   </>

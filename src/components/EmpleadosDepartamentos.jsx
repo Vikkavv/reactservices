@@ -24,7 +24,7 @@ function EmpleadosDepartamentos() {
 
     useEffect(() => {
         getDepatamentos();
-    });
+    }, []);
     
     return(
         <>

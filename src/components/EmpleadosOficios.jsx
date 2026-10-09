@@ -32,7 +32,7 @@ function EmpeladosOficios() {
 
     useEffect(() => {
         getOficios();
-    })
+    }, [])
 
     return(
         <>
