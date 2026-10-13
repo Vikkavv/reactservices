@@ -40,6 +40,12 @@ export default class Coches extends Component {
                 <img src={this.state.coche.imagen} alt="" style={{width: "200px"}} />
             </>
         }
+        { this.state.coche &&
+            Object.keys(this.state.coche).map((clave, i) => {
+                let valor = Object.values(this.state.coche)[i]
+                return (<p key={i}>{clave}: {valor}</p>);
+            })
+        }
       </div>
     )
   }

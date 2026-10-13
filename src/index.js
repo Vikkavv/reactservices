@@ -2,31 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ComponentServiceCustomers from './components/ComponentServiceCustomers';
-import ComponentServiceSuppliers from './components/ComponentServiceSuppliers';
-import EmpleadosDepartamentos from './components/EmpleadosDepartamentos';
-import EmpeladosOficios from './components/EmpleadosOficios';
-import Menu from './components/Menu';
-import EmpleadosComponent from './components/EmpleadosComponent';
-import DepartamentosComponent from './components/DepartamentosComponent';
-import Concesionario from './components/Concesionario';
+import Router from './components/Router';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
+import $ from 'jquery'
+import Popper from 'popper.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
-    <Menu/>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<ComponentServiceCustomers/>} />
-        <Route path='/Suppliers' element={<ComponentServiceSuppliers/>} />
-        <Route path='/Empleados' element={<EmpleadosDepartamentos/>} />
-        <Route path='/EmpleadosOficios' element={<EmpeladosOficios/>} />
-        <Route path='/EmpleadosDepartamentos' element={<DepartamentosComponent/>} />
-        <Route path='/Concesionario' element={<Concesionario/>} />
-      </Routes>
-    </BrowserRouter>
-  </>
+  <div className='container'>
+    <Router/>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
